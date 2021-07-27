@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import "~bootswatch/dist/litera/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/litera/bootswatch";
+
+//Applied to all html elements
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+//Background colour for our body
+body{
+   background-color: #ffffff;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+//General structure of the sidebar
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background: #187110;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+//Side bar heading
+.wrapper .sidebar h6{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+//Side bar list
+.wrapper .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+//Sidebar list items
+.wrapper .sidebar ul li a{
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: small;
+}
+
+// .wrapper .sidebar ul li a .fas{
+//   width: 25px;
+// }
+
+//Side bar hover 
+.wrapper .sidebar ul li:hover{
+  background-color: #fff;
+border-top-left-radius: 15px;
+border-bottom-left-radius: 15px;
+}
+
+//Side bar items hover
+.wrapper .sidebar ul li:hover a{
+  color: #187110;
+  font-weight: bolder;
+}
+
+//Where the main information/content will be going
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 220px;
+  margin-right: 20px;
+}
+
+//Header for the information/content
+.wrapper .main_content .header{
+  padding: 10px;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+//Actual information 
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
+}

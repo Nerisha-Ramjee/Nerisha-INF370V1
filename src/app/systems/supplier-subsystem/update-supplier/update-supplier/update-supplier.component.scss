@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import "~bootswatch/dist/litera/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/litera/bootswatch";
+
+
+*{
+    font-family: 'Montserrat', sans-serif;
+  }
+
+h5{
+    font-weight: bold;
+}
+
+.form-control:focus {
+    border-color: #22b815;
+    box-shadow: 0px 1px 1px #717171 inset, 0px 0px 8px rgba(100, 255, 144, 0.605);
+}
+
+.button-position
+{
+    margin-left:75px;
+}
+
+.button-spacing
+{
+    margin-left:10px;
+    font-size: large;
+    width: 100px;
+    text-align: center;
+}

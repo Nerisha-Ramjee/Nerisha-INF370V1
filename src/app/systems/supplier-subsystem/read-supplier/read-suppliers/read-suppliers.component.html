@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppliers</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div app-side-navbar></div>
+        <div class="main_content">
+            <br>
+            <div class="header">Suppliers</div>
+            <div class="info">
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class="add-icon"><mat-icon style="font-size: 35px;" (click)="routerAddSupplier()">add</mat-icon></div>
+                <br>
+                <br>
+                <table class="table table-hover">
+                    <tbody>
+                        <tr class="table-success">
+                            <th class="col-3">Supplier Name</th>
+                            <th class="col-3">Contact Person Cell</th>
+                            <th class="col-3">Contact Person Email Address</th>
+                            <th class="col-1">Edit</th>
+                            <th class="col-1">Delete</th>
+                        </tr>
+                        <tr>
+                            <td>C3H80 Inc.</td>
+                            <td>081 345 3234</td>
+                            <td>mrchemical@gmail.com</td>
+                            <td class="table-icons"><mat-icon (click)="routerUpdateSupplier()">edit</mat-icon></td>
+                            <td class="table-icons"><mat-icon (click)="routerDeleteSupplier()">delete</mat-icon></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="paginator">
+                    <ul class="pagination pagination-sm">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#">&laquo;</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">&raquo;</a>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<div class="modal-body" style="width: 25rem; height: 25rem;">
+  <h5 mat-dialog-title>Add Supplier</h5>
+  <div class="form-group">
+    <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">Supplier Name</label>
+    <input class="form-control form-control-sm" type="text" placeholder="Insert Supplier Name" id="inputSmall">
+    <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">Contact Person Number</label>
+    <input class="form-control form-control-sm" type="text" placeholder="Insert Contact Person Number" id="inputSmall">
+    <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">Contact Person Email Address</label>
+    <input class="form-control form-control-sm" type="text" placeholder="Insert Contact Person Email Address"
+      id="inputSmall">
+    <br>
+    <div class="button-position">
+      <button type="button" class="btn btn-success button-spacing" (click)="routerConfirmCreation()">Save</button>
+      <button type="button" class="btn btn-danger button-spacing">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!--
+<div class="modal-body" style="width: 25rem; height: 25rem;">
+  <h5 mat-dialog-title>Add Supplier</h5>
+  <form #userForm="ngForm" (ngSubmit)="userForm.form.valid && onSubmit(userForm)">
+    <div class="form-group">
+      <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">Supplier Name</label>
+      <input name="name" class="form-control form-control-sm" type="text" placeholder="Insert Supplier Name"
+        [(ngModel)]="model.name" #name="ngModel" [ngClass]="{ 'is-invalid': userForm.submitted && name.invalid }"
+        required>
+      <div class="invalid-feedback" *ngIf="userForm.submitted && name.invalid">
+        <p *ngIf="name.errors.required"> Supplier name is required</p>
+      </div>
+    </div>
+    <div class="button-position">
+      <div class="form-group">
+        <button [disabled]="userForm.invalid" type="submit" class="btn btn-success button-spacing" (click)="routerConfirmCreation()">Save</button>
+        <button type="button" class="btn btn-danger button-spacing">Cancel</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+class="errors"
+            *ngIf="
+              form.get('student_surname').hasError(item.type) &&
+              (form.get('student_surname').dirty ||
+                form.get('student_surname').touched)
+            "
+-->
