@@ -34,6 +34,7 @@
               "node_modules/bootswatch/dist/litera/bootstrap.min.css", 
               "node_modules/bootswatch/dist/litera/bootstrap.css", 
               "node_modules/bootswatch/dist/litera/_variables.scss",
+              "node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
             "scripts": []
